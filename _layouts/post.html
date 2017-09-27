@@ -1,0 +1,50 @@
+---
+layout: master
+---
+
+<article>
+	
+	<header class="article-header">
+
+		<div class="article-banner" 
+		     style="background-image: url({{ site.baseurl }}/{{ page.large_image_url }})"">
+			
+		</div>
+
+		<div class="breadcrumbs">
+
+			<div>
+				blog <span>|</span> 
+			</div>			
+
+			<div class="tag-wrapper">
+				{% for tag in page.tags %}
+					<div class="tag"> {{ tag }} </div>
+				{% endfor %}
+			</div>
+
+		</div>
+
+		<h1 class="article-title">{{ page.short_title }}</h1>
+
+		<p class="article-description">{{ page.description }}</p>
+
+		<time class="article-date">{{ page.date | date: "%-d %B %Y" }}</time>
+
+		<hr>
+		
+	</header>	
+
+	<div class="article-content">
+		{{ content }}
+	</div>
+
+	<section class="comments">
+		{% if page.comments %}
+			{% include disqus.html %}
+		{% endif %}
+	</section>
+
+</article>
+
+

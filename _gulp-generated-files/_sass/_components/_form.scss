@@ -1,0 +1,41 @@
+.contact-form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 60%;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    input, 
+    textarea {
+	    margin: 10px 0;
+	    width: 100%;
+	    text-align: center;
+	    font-family: $font;
+	}
+
+	/* reset default styles */
+	button {
+		background-color: transparent;
+    	border: inherit;
+    	font-family: inherit;
+	}
+
+	/* 
+	 * overridden by min-height elsewhere, but fixes bug in IE11
+     * http://stackoverflow.com/questions/19371626/flexbox-not-centering-vertically-in-ie 
+     */
+	.button {
+		height: 1px;
+	}
+
+	textarea {
+		min-height: 100px;
+	}
+}

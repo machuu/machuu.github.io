@@ -1,0 +1,146 @@
+/* No components used here. Some hacks. Probably needs tidying/refactoring but 
+   just getting landing page up quickly */
+
+.landing-page {
+	
+	.landing-page-header {
+		background-color: $highlight_color;
+		height: 500px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		text-align: center;
+		padding: 70px 0;
+
+		img {
+			border-radius: 50%;
+		}
+
+		h1 {
+			color: white;
+			text-transform: uppercase;
+			font-size: 56px;
+			font-weight: $light;
+			text-align: center;
+			margin-top: 0;
+		}
+
+		.button {
+			background-color: white;
+			border-color: $muted_text_color;
+			color: $muted_text_color;
+			margin-top: 10px;
+
+			&:hover {
+				background-color: $muted_background_color;
+				color: white;
+				border-color: white;
+			}
+		}
+	}	
+}
+
+.landing-page-intro {
+	p {
+		text-align: center;
+		font-size: 28px;
+		font-weight: $light;
+		padding: 5%;
+	}
+}
+
+.product {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	text-align: center;
+	font-size: 20px;
+	font-weight: $light; 
+	padding: 7%;
+
+	&:nth-child(odd) {
+		background-color: $muted_background_color;
+	}
+
+	&:nth-child(even){		
+		-webkit-box-orient: horizontal;		
+		-webkit-box-direction: reverse;		
+		    -ms-flex-direction: row-reverse;		
+		        flex-direction: row-reverse;
+	}
+
+	.title-and-price,
+	.details {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	p {
+		font-style: italic;
+	}
+
+	div {
+		width: 50%;
+	}
+
+	@media screen and (max-width: 900px){
+		div {
+			width: 100%;
+		}
+	}
+
+	ul {
+		text-align: left;
+		list-style-type: disc;
+		margin:	0 60px;
+
+		li {
+			margin-bottom: 5px;
+		}		
+	}
+
+	h2 {
+		font-weight: $normal;
+		color: $highlight_color;		
+	}
+
+	.price {
+		font-size: 22px;
+	}
+
+	.button {
+		margin: 20px 0 30px;
+	}
+}
+
+.landing-page-contact {
+	text-align: center;
+	padding: 80px 0;
+
+	p {
+		font-size: 26px;
+		color: $highlight_color;
+		font-weight: $light;
+	}
+}

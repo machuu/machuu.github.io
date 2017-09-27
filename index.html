@@ -1,1 +1,135 @@
-Hello World
+---
+title: Matt Hoover | Test Engineer in Durham, NC
+layout: master
+content_meta: "Matt Hoover is a Manufacturing Test Engineer near Durham, NC"
+---
+
+
+<div class="landing-feature">
+
+	<div>
+
+		<h1>
+			<span class="name">Matt Hoover</span> 
+			<br>
+			<span class="job-title">Test / DevOps Engineer</span>
+		</h1>
+
+	</div>
+
+</div>
+
+
+<section class="featured-work-grid">
+	
+	<div class="sidebar-selector">
+		
+		<h2 class="sidebar-selector-heading">Featured Work</h2>
+		
+		<ul>
+			<li class="tab active" data-reference="featured-programming">
+				<h3 class="tab-heading">Programming</h3>
+			</li>
+
+			<li class="tab" data-reference="featured-writing">
+				<h3 class="tab-heading">Writing</h3>
+			</li>
+		</ul>
+
+	</div>
+
+	<div id="featured-programming" class="featured-grid">
+
+		{% for project in site.projects %}
+
+			{% if project.featured == true %}
+
+				<a href="{{ project.page_url }}">
+					<div class="tile">
+
+						<div class="tile-info">
+							<h4 class="tile-title">{{ project.short_title }}</h4>
+							<span class="tile-description">{{ project.description }}</span>
+						</div>
+
+						<img src="{{ project.image_url }}" alt="project image">
+
+					</div>
+				</a>
+
+			{% endif %}
+
+		{% endfor %}
+	
+	</div>	
+
+	
+	<div id="featured-writing" class="featured-grid hidden">
+
+		{% for post in site.posts %}
+
+			{% if post.featured == true %}
+
+				<a href="{{ post.url }}">
+					<div class="tile">
+
+						<div class="tile-info">
+							<h4 class="tile-description">{{ post.short_title }}</h4>
+						</div>
+
+						<img src="{{ post.featured_image_url }}" alt="blog post image">
+						
+					</div>
+				</a>
+
+			{% endif %}
+
+		{% endfor %}
+	
+	</div>
+
+</section>
+
+
+<section class="front-page-blog">
+
+	<h2 class="section-title">Latest blog post</h2>
+			
+	{% for post in site.posts limit:1 %}
+
+		<article class="featured-post">
+		
+			<h3 class="featured-post-title">{{ post.short_title }}</h3>
+			<img src="{{ site.baseurl }}/{{ post.latest_post_image_url }}" alt="blog post image">
+			<p>{{ post.excerpt }}</p>
+
+			<div class="buttons-wrapper">
+				<a class="button" href="{{ post.url }}">Read now</a>
+			</div>						
+
+		</article>
+
+	{% endfor %}	
+
+</section>
+
+
+<section class="front-page-about">
+
+	<div>
+		<img src="images/matt_at_hoover_dot_ml.png" alt="Matt Hoover">
+	</div>
+
+	<div class="about-me-info">
+		<h2 class="about-me-heading">About me</h2>
+
+		<p>
+			I am a Manufaturing Test Engineer, skewing towards DevOps and Systems Administration.
+		</p>
+
+		<div class="buttons-wrapper">
+			<a href="{{ site.baseurl }}{% link contact.md %}" class="button">Contact me</a>
+		</div>				
+	</div>		
+
+</section>	

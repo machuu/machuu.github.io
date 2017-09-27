@@ -1,0 +1,51 @@
+---
+title: Projects | Matt Hoover
+layout: master
+content_meta: "Portfolio of Matt Hoover"
+
+redirect_from:
+    - /projects.html
+---
+
+
+<h1 class="page-title">Projects</h1>
+
+<div class="project-grid">
+
+	{% assign projects = site.projects | sort: 'index_order' %}
+
+	{% for project in projects %}
+
+		<div class="project-grid-element">
+
+			<a href="{{ project.page_url }}">
+
+				<div class="tile">
+
+					<div class="tile-info">
+
+						<h2 class="tile-title">{{ project.short_title }}</h2>
+
+						<span class="tile-description">{{ project.description }}</span>
+
+					</div>
+
+					<img src="{{ site.baseurl }}/{{ project.image_url }}" alt="project image">
+
+				</div>
+
+			</a>
+
+			<div class="tag-wrapper">
+
+				{% for tag in project.tags %}
+					<div class="tag">{{ tag }}</div>
+				{% endfor %}
+
+			</div>			
+
+		</div>
+
+	{% endfor %}
+
+</div>

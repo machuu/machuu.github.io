@@ -1,1 +1,21 @@
-theme: jekyll-theme-slate
+url: http://github.hoover.ml
+
+name: Matt Hoover | Test Engineer
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name
+
+
+gems:
+  - jekyll-gist
+  - jekyll-redirect-from
+
+sass:
+  sass_dir: _gulp-generated-files/_sass
+  style: compressed
+  
+exclude: ["gulpfile.js"]
+
+permalink: /blog/:title/
