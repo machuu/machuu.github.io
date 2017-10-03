@@ -39,3 +39,8 @@ $url: "{{ site.baseurl }}";
 @import '_layout/article-index';
 @import '_layout/projects';
 @import '_layout/landing-page';
+
+#profile-link-image {
+	width: 70px;
+	height: 70px;
+}
