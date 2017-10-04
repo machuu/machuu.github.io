@@ -12,6 +12,7 @@ date: 29 Sept 2017
 index_order: 2
 ---
 
-[View the App](http://sampleapp.hoover.ml)
+[Live App](http://sampleapp.hoover.ml)
+[Repo](https://github.com/machuu/railstutorial-sample_app)
 
 First large tutorial in my quest to learn web development.
