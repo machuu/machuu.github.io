@@ -2,8 +2,8 @@
 title: "Rails Tutorial SampleApp"
 short_title: "SampleApp"
 content_meta: "This is a code-along through the Rails Tutorial by Michael Hartl"
-image_url: "images/sampleapp.png"
-page_url: "projects/sampleapp"
+image_url: "/images/sampleapp.png"
+page_url: "/projects/sampleapp"
 description: "This is a code-along through the Rails Tutorial by Michael Hartl" 
 tags: ["Ruby on Rails"]
 layout: project
