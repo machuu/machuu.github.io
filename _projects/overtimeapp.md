@@ -27,7 +27,7 @@ Faster paced video tutorial building a Web App for tracking employee overtime.
 ## Links
 
 - [Live App](http://overtimeapp.hoover.ml)
-- [Repo](https://github.com/machuu/stackskills-rails-code-along)
+- [Repo](https://github.com/machuu/stackskills-overtime_app)
 - [Tutorial](https://stackskills.com/p/professional-rails-code-along)
 
 
