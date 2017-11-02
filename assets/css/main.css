@@ -4,6 +4,7 @@ body {
 
 container {
 	padding: 20px;
+	width: 100%;
 }
 
  * {
@@ -16,6 +17,7 @@ div.footer {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	clear: both;
 }
 
 .navbar{
@@ -89,7 +91,7 @@ nav {
 } */
 
 img {
-height: 200px;
+	height: 200px;
 }
 
 img {
@@ -101,14 +103,29 @@ img {
         width: 33.3333%;
     }  */
 
-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.card {
+	width: 210px;
+	height: 450px;
+	float: left;
+	margin: 1%;
+	padding: 1%;
+}
+
+.card-body {
     display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
-	margin: 2%;
-	text-align: left;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.card-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-footer a {
+}
+
+.card-img-top {
+	height: 200px;
+	width: 200px;
 }
