@@ -105,10 +105,19 @@ border-width: 2px;
 width: 33.3333%;
 }  */
 
+.skill-item {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: space-around;
+}
+.card-container {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: space-around;
+}
+
 .card {
-	width: 210px;
-	height: 450px;
-	float: left;
+	width: 200px;
 	margin: 1%;
 	padding: 1%;
 }
