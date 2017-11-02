@@ -89,3 +89,15 @@ img {
         border-width: 2px;
         width: 33.3333%;
     }  */
+
+card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	margin: 2%;
+	text-align: left;
+}
