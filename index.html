@@ -1,88 +1,184 @@
----
-title: Matt Hoover | Test Engineer in Durham, NC
-layout: master
-content_meta: "Matt Hoover is a Manufacturing Test Engineer near Durham, NC"
----
+<!doctype html>
+<html>
+    <head>
+        <!-- all the metas  -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="A small sample of what Maude can do, what she's up to, and how to reach her.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="landing-feature">
-	<div>
-		<h1>
-			<span class="name">Matt Hoover</span>
-			<br>
-			<span class="job-title">Test / DevOps Engineer</span>
-		</h1>
-	</div>
-</div>
+        <title>Maude Mensah Simpson Developer Portfolio</title>
+            <link rel="shortcut icon" href="assets\images\logotrans.png" type="image/x-icon">
+            <link rel="icon" href="assets\images\logotrans.png" type="image/x-icon">
+        
+        <!--fonts  -->
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Megrim" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <!--font-family: 'Megrim', cursive;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Open Sans', sans-serif;
+          -->
+
+        <!--bootstrap  -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <!--custom css  -->
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>   
+        
+        <!--navbar  -->
+        <div class="navbar">
+            <a href="#about">About Me</a>
+            <a href="#projects">My Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="contact">Contact Me</a>
+        </div>
+        
+        <!--Header -->
+        <div class="row">
+            <div class="col jumbotron jumbotron-fluid">
+                <div class ="container">
+                    <div class="jumbotron-text">
+                        <h1>Maude Mensah Simpson</h1>
+                        <p id="logo"><a href="#"><img src="assets\images\logotrans.png" alt="Maude Logo" /></a></p>
+                        <hr class="my-4">
+                        <p>Software Developer in Durham, NC | UX FanGirl</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-<section class="featured-work-grid">
-	<div class="sidebar-selector">
-		<h2 class="sidebar-selector-heading">Featured Work</h2>
-		<ul>
-			<li class="tab active" data-reference="featured-programming">
-				<h3 class="tab-heading">Programming</h3>
-			</li>
-			<li class="tab" data-reference="featured-writing">
-				<h3 class="tab-heading">Writing</h3>
-			</li>
-		</ul>
-	</div>
-	<div id="featured-programming" class="featured-grid">
-		{% for project in site.projects %}
-			{% if project.featured == true %}
-				<a href="{{ project.page_url }}">
-					<div class="tile">
-						<div class="tile-info">
-							<h4 class="tile-title">{{ project.short_title }}</h4>
-							<span class="tile-description">{{ project.description }}</span>
-						</div>
-						<img src="{{ project.image_url }}" alt="project image">
-					</div>
-				</a>
-			{% endif %}
-		{% endfor %}
-	</div>
-	<div id="featured-writing" class="featured-grid hidden">
-		{% for post in site.posts %}
-			{% if post.featured == true %}
-				<a href="{{ post.url }}">
-					<div class="tile">
-						<div class="tile-info">
-							<h4 class="tile-description">{{ post.short_title }}</h4>
-						</div>
-						<img src="{{ post.featured_image_url }}" alt="blog post image">
-					</div>
-				</a>
-			{% endif %}
-		{% endfor %}
-	</div>
-</section>
+        <div id="about" class="container">
+            <div class="row">
+                <section class="col">
+                        <img src="assets\images\378313_703027296036_631712940_n.jpg" class="rounded-circle" id="profilePic" alt="A picture of Maude." />                    
+                        <h2>Hi, I'm Maude</h2>
+                        <p>Being a successful developer is not only translating your client's vision into reality, but anticipating things that they didn't think they would need... doing things they never thought possible. I also like to hide little treasures in my work  I love creating beautiful, functional projects that make life easier.  My goal is to create things that users love, and clients love to show off.</p>
 
-<section class="front-page-blog">
-	<h2 class="section-title">Latest blog post</h2>
-	{% for post in site.posts limit:1 %}
-		<article class="featured-post">
-			<h3 class="featured-post-title">{{ post.short_title }}</h3>
-			<img src="{{ site.baseurl }}/{{ post.latest_post_image_url }}" alt="blog post image">
-			<p>{{ post.excerpt }}</p>
-			<div class="buttons-wrapper">
-				<a class="button" href="{{ post.url }}">Read now</a>
-			</div>
-		</article>
-	{% endfor %}
-</section>
+                </section> 
+                    
+                   
+                </div>
+        
+            </div>
 
-<section class="front-page-about">
-	<div>
-		<img src="images/matt_at_hoover_dot_ml.png" alt="Matt Hoover">
-	</div>
-	<div class="about-me-info">
-		<h2 class="about-me-heading">About me</h2>
-		<p>
-			I am a Manufaturing Test Engineer, skewing towards DevOps and Systems Administration.
-		</p>
-		<div class="buttons-wrapper">
-			<a href="{{ site.baseurl }}{% link contact.md %}" class="button">Contact me</a>
-		</div>
-	</div>
-</section>	
+            <div class="row">
+                <div id="skills" class="container-fluid">
+                    <h1>My Skills</h1>
+                    <span class="divider"></span>
+                    
+                    <div class= "w-33 p-4">
+                        <h3>Front End</h3>
+                        <div class="skill-item">
+                            <img src="assets/images/html.png" />
+                            <img src="assets/images/css.png" />
+                            <img src="assets/images/javascript.png" />
+                        </div>
+                        <div class="skill-item">
+                                    <img classsrc="assets/images/react.png" />
+                                    <img src="assets/images/sass.png" />
+                                    <img src="assets/images/" />
+                        </div>
+                    </div>
+
+                    <div class="w-33 p-4">
+                            <h3>Back End</h3>
+                            <div class="skill-item">
+                                <img src="assets/images/c_sharp.png" />
+                                <img src="assets/images/mongodb.png" />
+                                <img src="assets/images/nodejs.png" />
+                            </div>
+                            <div class="skill-item">
+                                <img src="assets/images/sql.png" />
+                                <img src="assets/images/" />
+                                <img src="assets/images/" />
+                            </div>
+                        </div>
+                        <div class="">
+                               <h3>Tools</h3> 
+                               <ul>
+                                   <li class="list">
+                                       <img src="/open-iconic/svg/bolt.svg">
+                                       Github
+                                   </li>
+                                   <li class="list">
+                                       <img src="/open-iconic/svg/bolt.svg">
+                                       RESTful API
+                                   </li>
+                                   <li class="list">
+                                       <img src="/open-iconic/svg/bolt.svg">
+                                       ECMAScript6
+                                   </li>
+                                   <li class="list">
+                                       <img src="/open-iconic/svg/bolt.svg">
+                                       Postman
+                                   </li>
+                               </ul>
+                        </div>
+                    </div>
+
+                    </div>
+                    <div id="portfolio">
+                        <h1>My Work So Far</h1>
+                        <!--cards  -->
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="assets/images/uni_butt.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Bamazon</h4>
+                                <p class="card-text">A Node.js exercise</p>
+                                <a href="https://github.com/maudem" class="btn btn-primary">GitHub</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="assets/images/uni_butt.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">What's for Dinner</h4>
+                                <p class="card-text">Find a dinner recipe and a movie to watch all in one place!</p>
+                                <a href="https://github.com/maudem" class="btn btn-primary">GitHub</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="assets/images/uni_butt.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Habibi</h4>
+                                <p class="card-text">What to find a Friend? How about a date? It's all here!</p>
+                                <a href="https://github.com/maudem" class="btn btn-primary">GitHub</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem;">
+                            <img class="card-img-top" src="assets/images/uni_butt.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Burger App</h4>
+                                <p class="card-text">Might be a Kids task app later</p>
+                                <a href="https://github.com/maudem" class="btn btn-primary">GitHub</a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+        <div class="footer">
+            <p>
+            
+            </p>
+            <p id="copyright">Made with <img src="assets/images/social/burger.png" /> by Maude Mensah Simpson &copy 2017 </p>
+
+        </div>
+    </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
