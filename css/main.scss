@@ -54,3 +54,14 @@ ul {
     margin-right: 0;
     padding-left: 40px;
 }
+
+.tile {
+	height: 400px;
+	width:  400px;
+}
+
+.tile img {
+	z-index: -1;
+	position: absolute;
+	bottom: 0;
+}
