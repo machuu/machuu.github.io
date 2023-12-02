@@ -8,4 +8,4 @@ redirect_from:
     - /contact.html
 ---
 
-<p style="text-align: center">No contact info yet. Getting other pages set first</p>
+<span>email: <a href="mailto:matt@hoover.ml">matt@hoover.ml</a></span>
